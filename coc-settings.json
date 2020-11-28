@@ -1,0 +1,33 @@
+{
+    "languageserver": {
+        "clangd": {
+        "command": "clangd",
+        "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+        "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+        }
+    },
+    "languageserver": {
+            "intelephense": {
+            "command": "intelephense",
+            "args": ["--stdio"],
+            "filetypes": ["php"],
+            "initializationOptions": {
+            "storagePath": "/tmp/intelephense"
+            }
+        }
+    },
+    "languageserver": {
+    "bash": {
+        "command": "bash-language-server",
+        "args": ["start"],
+        "filetypes": ["sh"],
+        "ignoredRootPaths": ["~"]
+        }
+    },
+    "explorer.focus": false,
+    "explorer.width": 30,
+    "explorer.icon.expanded": "-",
+    "explorer.icon.collapsed": "+",
+    "explorer.icon.enableNerdfont": true
+
+}
